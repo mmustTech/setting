@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/prism.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+
+	<style type="text/css">
+		@media print {
+		    *{page-break-before: always !important;}
+		}
+		/*.main-view-model * { line-height: 1.045em; }*/
+	</style>
+</head>
+<body>
+
+<div class="" style="padding: 0 7.5%;">
+<div class="row">
+<!-- Start Row ///////////////////-->
+
+<div class="col-sm-3 col-lg-3 main-menu">
+<!-- Start Section _________________-->
+	<div class="main-documentation-title">
+		<h3>Documentation</h3>
+		<p><span>Homepage</span> / documentation page</p>
+	</div>
+	<ul>
+		<li><a href="#xampp">XAMPP SERVER</a></li>
+		<li><a href="#composer">COMPOSER</a></li>
+		<li><a href="#java">JAVA DEVELOPMENT KIT</a></li>
+		<li><a href="#andoid">ANDROID STUDIO</a></li>
+		<li><a href="#ionic">IONIC FRAMEWORK</a></li>
+		<li><a href="#git">GIT</a></li>
+		<li><a href="#github">GitHub & SSH Protocol</a></li>
+		<li><a href="#heroku">Heroku</a></li>
+	</ul>
+<!-- End Section _________________-->
+</div>
+
+<div class="col-sm-12 col-md-9 col-lg-9 offset-lg-3 main-content-docs">
+<!-- Start Section _________________-->
+
+<div id="xampp" class="main-section-of-technology">
+<!-- Beginning -->
+<div class="main-technology-setup-documentation">
+	<h4>Xampp Server</h4>
+	<p>
+		XAMPP is the most popular PHP development environment
+		<br >
+		XAMPP is a completely free, easy to install Apache distribution containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.
+		<br >
+		<span>to download it, <a href="https://www.apachefriends.org/download.html">click here</a>.</span>
+	</p>
+</div>
+
+<div class="main-technology-setup-code">
+<p>> After Downlaod / Install the .dmg file</p>
+<pre><code class="language-javascript">// setup your DocumentRoot in httpd.conf 
+// the PATH /Applications/XAMPP/xamppfiles/etc/httpd.conf
+DocumentRoot "/Users/inf/sites"
+&lt;Directory "/Users/inf/sites"></code></pre>		
+</div>
+
+<div class="main-technology-setup-code">
+<p>> After custom your DocumentRoot</p>
+<pre><code class="language-javascript">// upgrade your php  -version
+$ vim ~/.bash_profile
+
+// click [ a ] button to insert $Path & click [ esc ] button to skip
+export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
+
+//enter :wq to quit
+:wq
+
+$ source ~/.bash_profile
+
+// check PHP path file
+which php
+
+//chech PHP main version
+php -version</code></pre>		
+</div>
+<!-- Ending -->
+</div>
+<!-- ///// 
+END CODING -->
+
+<div id="composer" class="main-section-of-technology">
+<!-- Beginning -->
+<div class="main-technology-setup-documentation">
+	<h4>Composer</h4>
+	<p>
+		Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+		<br >
+		<span>to download it, <a href="https://www.apachefriends.org/download.html">click here</a>.</span>
+	</p>
+</div>
+
+<div class="main-technology-setup-code">
+<p>> Install the composer commend +with the last version</p>
+<pre><code class="language-javascript">sudo php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+sudo php composer-setup.php
+sudo php -r "unlink('composer-setup.php');"</code></pre>
+</div>
+
+<div class="main-technology-setup-code">
+<p>> After running the installer, you can run this to move composer.phar to a directory that is in your path</p>
+<pre><code class="language-javascript">sudo mv composer.phar /usr/local/bin/composer</code></pre>		
+</div>
+<!-- Ending -->
+</div>
+<!-- ///// 
+END CODING -->
+
+<div id="java" class="main-section-of-technology">
+<!-- Beginning -->
+<div class="main-technology-setup-documentation">
+	<h4>Java Development Kit (JDK)</h4>
+	<p>
+		The JDK includes tools useful for developing and testing programs written in the Java programming language and running on the Java platform.
+		See also:<br />
+		- Java Developer Newsletter: From your Oracle account, select Subscriptions, expand Technology, and subscribe to Java.<br />
+		- Java Developer Day hands-on workshops (free) and other events<br />
+		- Java Magazine<br />
+		Recommended: JDK 8u151 checksum 
+		<br >
+		<span>to download it, <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">click here</a>.</span>
+	</p>
+</div>
+
+<div class="main-technology-setup-code">
+<p>> After Intalling JDK 8u151</p>
+<pre><code class="language-javascript">//Set the JAVA_HOME environment variable to the location of your JDK installation +use the ~/.bash_profile
+$ vim ~/.bash_profile
+
+// click [ a ] button to insert $Path & click [ esc ] button to skip
+export JAVA_HOME="$(/usr/libexec/java_home)"
+
+//enter :wq to quit
+:wq
+
+$ source ~/.bash_profile$ 
+
+// run java version
+$ java -version
+// java version "1.8.0_151"
+// Java(TM) SE Runtime Environment (build 1.8.0_151-b12)
+// Java HotSpot(TM) 64-Bit Server VM (build 25.151-b12, mixed mode)</code></pre>
+</div>
+<!-- Ending -->
+</div>
+<!-- ///// 
+END CODING -->
+
+<div id="andoid" class="main-section-of-technology">
+<!-- Beginning -->
+<div class="main-technology-setup-documentation">
+	<h4>Android Studio</h4>
+	<p>
+		Android Studio is the official Integrated Development Environment (IDE) for Android app development, based on IntelliJ IDEA . On top of IntelliJ's powerful code editor and developer tools, Android Studio offers even more features that enhance your productivity when building Android apps, such as:
+		<br />
+		- A flexible Gradle-based build system<br />
+		- A fast and feature-rich emulator<br />
+		- A unified environment where you can develop for all Android devices<br />
+		- Instant Run to push changes to your running app without building a new APK<br />
+		- Code templates and GitHub integration to help you build common app features and import sample code<br />
+		- Extensive testing tools and frameworks<br />
+		- Lint tools to catch performance, usability, version compatibility, and other problems<br />
+		- C++ and NDK support<br />
+		- Built-in support for Google Cloud Platform, making it easy to integrate Google Cloud Messaging and App Engine<br />
+		- This page provides an introduction to basic Android Studio features. For a summary of the latest changes, see Android Studio Release Notes.	
+		<br />
+		<span>to download it, <a href="https://developer.android.com/studio/index.html">click here</a>.</span>
+	</p>
+</div>
+
+<div class="main-technology-setup-code">
+<p>> After Intalling Android Studio -v 3.0.1</p>
+<pre><code class="language-javascript">//Set the ANDROID_HOME environment variable to the location of your Android SDK installation +use the ~/.bash_profile
+$ vim ~/.bash_profile
+
+// click [ a ] button to insert $Path & click [ esc ] button to skip
+export ANDROID_HOME=/Users/inf/Library/Android/sdk
+export PATH=${PATH}:/Users/inf/Library/Android/sdk/platform-tools:/Users/inf/Library/Android/sdk/tools
+
+//enter :wq to quit
+:wq
+
+$ source ~/.bash_profile
+
+//Open your ~/.bash_profile file
+$ open ~/.bash_profile</code></pre>
+<p>> Next Update Your Tools / Platform with the SDK Manager:<br /> <small>Configure > SDK Manager</small>.</p>
+<p>Recommended SDK Tools packages:<br />
+-Android SDK Build-Tools <br />
+-Android SDK Platform-Tools <br />
+-Android SDK Tools <br />
+-Android Emulator <br />
+-Android SDK Platform <br />
+-Intel or ARM System Images
+</p>
+<p>Recommended SDK Platform packages:<br />
+-Android 6.0 (marshmallow) 23<br />
+-Android 4.1 (Jaly Bean) 16
+</p>
+<div><img src="img/sdk-manager-tools_2x.png"></div>
+</div>
+<!-- Ending -->
+</div>
+<!-- ///// 
+END CODING -->
+
+<div id="ionic" class="main-section-of-technology">
+<!-- Beginning -->
+<div class="main-technology-setup-documentation">
+	<h4>Ionic Framework</h4>
+	<p>
+		Ionic is the app platform for web developers. Build amazing mobile, web, and desktop apps all with one shared code base and open web standards.<br >
+		<span>to download it, <a href="https://www.apachefriends.org/download.html">click here</a>.</span>
+	</p>
+</div>
+
+<div class="main-technology-setup-code">
+<p>> First, install Node.js. Then, install the latest Cordova and Ionic command-line tools in your terminal. Follow the Android and iOS platform guides to install required tools for development.</p>
+<p>> After Intalling Node.js +check/run node & npm -version</p>
+<pre><code class="language-javascript">// check node version
+$ node -v //v8.9.4
+//check npm version
+$ npm -v //v5.6.0</code></pre>		
+</div>
+
+<div class="main-technology-setup-code">
+<p>> Instaling cordova / ionic +with npm</p>
+<pre><code class="language-javascript">//launch this command {if got error in installation}
+$ sudo npm install --global --unsafe-perm quickscrape
+// run install commend
+$ sudo npm install -g cordova ionic --unsafe-perm quickscrape
+
+// check your ionic version
+$ ionic -v
+//check your cordova version
+$ cordova -v</code></pre>		
+</div>
+
+<div class="main-technology-setup-code">
+<p>> Next you need to install Homebrew from <a href="https://brew.sh/">https://brew.sh/</a></p>
+<p>Homebrew installs the stuff you need that Apple didn’t.</p>
+<pre><code class="language-javascript">//run install comment
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></pre>		
+</div>
+
+<div class="main-technology-setup-code">
+<p>> Next install gradle +with brew packages from <a href="https://gradle.org/install/">https://gradle.org/install/</a></p>
+<p>Gradle is a dependency management / build tool that combines the best of Maven and Ant, making it an extremely powerful and customizable tool.</p>
+<pre><code class="language-javascript">//run install commend
+$ brew install gradle</code></pre>		
+</div>
+
+<div class="main-technology-setup-code">
+<p>> Next move on your dir & create your first ionic application</p>
+<pre><code class="language-javascript">//start +with yhis commend
+$ ionic start myApp tabs
+
+// serve your app
+$ cd myApp
+$ ionic serve -lab
+
+// to run or build your app for production, run
+$ ionic cordova run android --prod --release
+# or
+$ ionic cordova build android --prod --release</code></pre>		
+</div>
+
+<!-- Ending -->
+</div>
+<!-- ///// 
+END CODING -->
+
+<div id="git" class="main-section-of-technology">
+	<!-- Beginning -->
+	<div class="main-technology-setup-documentation">
+		<h4>Git Platform</h4>
+		<p>
+			Git is a command-line session showing repository creation, addition of a file, and remote synchronization.<br >
+			<span>to download it, <a href="https://git-scm.com/">click here</a>.</span>
+		</p>
+	</div>
+	
+<div class="main-technology-setup-code">
+<p>> After Intalling Git -v 3.0.1</p>
+<p>> then you must create new file named '.gitignore' to store on it the files & folder should not been remoted!<br />Like: [node_modules/, package-lock.json, [...]]</p>
+<pre><code class="language-javascript">// check git version
+$ git -version //git version 2.19.0
+
+//git helper command & for more common Git commands
+$ git --help
+
+//check git status
+$ git status
+
+//create an empty Git repository or reinitialize an existing one
+$ git init
+
+//add file contents to the index
+$ git add .
+
+//record changes to the repository
+$ git commit -m 'first commit it'
+
+//if your machine (mac, windows ..) connected with your github account.
+//you can now push your files project
+//update remote refs along with associated objects
+$ git push
+</code></pre>		
+</div>
+	
+
+	
+<!-- Ending -->
+</div>
+<!-- ///// 
+END CODING -->
+
+<div id="github" class="main-section-of-technology">
+	<!-- Beginning -->
+	<div class="main-technology-setup-documentation">
+		<h4>GitHub & SSH Protocol</h4>
+		<p>
+			Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username or password at each visit.<br >
+			<span>more docs, <a href="https://help.github.com/articles/connecting-to-github-with-ssh/">click here</a>.</span>
+		</p>
+	</div>
+	
+<div class="main-technology-setup-code">
+<p>> After Creating a new account in github.com</p>
+<p>> you can access to Github SSH Protocol services</p>
+<pre><code class="language-php">// checking for existing SSH keys
+$ ls -al ~/.ssh
+
+/*/ Generating a new SSH key /*/
+//Paste the text below, substituting in your GitHub email address.
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+#This creates a new ssh key, using the provided email as a label.
+
+#When you're prompted to [ Enter a file in which to save the key ], press Enter. This accepts the default file location.
+
+#At the prompt, type a secure passphrase. For more information, see [ Working with SSH key passphrases ].
+/*/	end section /*/
+
+
+/*/ Adding your SSH key to the ssh-agent /*/
+//start the ssh-agent in the background.
+$ eval "$(ssh-agent -s)"
+
+//add your SSH private key to the ssh-agent and store your passphrase in the keychain
+$ ssh-add -K ~/.ssh/id_rsa
+#then add the SSH key to your GitHub account.
+/*/	end section /*/
+
+
+/*/ Adding a new SSH key to your GitHub account /*/
+//copy the SSH key to your clipboard.
+$ pbcopy < ~/.ssh/id_rsa.pub
+#copies the contents of the id_rsa.pub file to your clipboard
+/*/	end section /*/
+
+/*/ Testing your SSH connection /*/
+//enter the following:
+$ ssh -T git@github.com
+#Verify that the fingerprint in the message you see matches one of the messages in step 2, then type
+#Verify that the resulting message contains your username. If you receive a ( permission denied ) message, see [ Error: Permission denied (publickey) ].
+/*/	end section /*/
+
+
+/*/ Deleting SSH keys terminal /*/
+$ rm ~/.ssh/{filename} // exemple: rm ~/.ssh/id_rsa.pub
+# there is three files created by default {id_rsa, id_rsa.pub, known_hosts}
+</code></pre>		
+</div>
+	
+
+	
+<!-- Ending -->
+</div>
+<!-- ///// 
+END CODING -->
+
+<div id="heroku" class="main-section-of-technology">
+	<!-- Beginning -->
+	<div class="main-technology-setup-documentation">
+		<h4>Huroku & deploying with Git</h4>
+		<p>
+			Heroku manages app deployments with Git, the popular version control system. You definitely don’t need to be a Git expert to deploy code to Heroku, but it’s helpful to learn the basics.  more documantation, <a href="https://devcenter.heroku.com/articles/git/">click here</a>.
+			<span>download it, <a href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install">click here</a>.</span>
+		</p>
+	</div>
+	
+<div class="main-technology-setup-code">
+<p>> Before you can deploy your app to Heroku, you need to initialize a local Git repository and commit your application code to it.</p>
+<p>> check demonstrates initializing a <a href="#git">Git</a> repository for an app that lives in the myapp directory></p>
+<pre><code class="language-javascript">//creating a Heroku remote
+$ heroku create
+
+//you can use the git remote command to confirm that a remote named heroku has been set for your app
+$ git remote -v
+
+//if you have already created your Heroku app, you can easily add a remote to your local repository 
+$ heroku git:remote -a thawing-inlet-61413
+
+//deploying code
+$ git push heroku master
+</code></pre>		
+</div>
+	
+
+	
+<!-- Ending -->
+</div>
+<!-- ///// 
+END CODING -->
+
+<!-- End Section _________________-->
+</div>
+	
+<!-- End Row ///////////////////-->
+</div>
+</div>
+    
+	<script src="js/prism.js"></script>
+</body>
+</html>
